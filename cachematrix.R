@@ -5,8 +5,9 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-matrix(,ncol(x),nrow(x))
-
+inverse <- function(){
+y <- matrix(,ncol(x),nrow(x))
+}
 
 
 
@@ -20,4 +21,14 @@ matrix(,ncol(x),nrow(x))
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
+        if(!is.null()) {
+        print"target already been inversed"
+        return() 
+        }
+        x$inverse()
+        y[1,1]<-x[1,1]
+        y[1,2]<-x[2,1]
+        
+        
+        
 }
